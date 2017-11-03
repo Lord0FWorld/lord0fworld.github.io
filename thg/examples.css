@@ -74,27 +74,27 @@ p{
 }
 #menu li {
 	display:inline-block;
-	margin: 10px;
-	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px;
-            border-radius: 10px;
+	color: #fff;
+	background-color: transparent;
+	
 }
 #menu li.active{
-	background:#666;
-	background: rgba(0,0,0, 0.5);
-	color: #fff;
+	background:transparent;
+	color: #34cc93;
 }
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color: #fff;
 }
 #menu li.active a:hover{
-	color: #000;
+	color: #34cc93;
 }
 #menu li:hover{
-	background: rgba(255,255,255, 0.8);
+	background: transparent;
+}
+
+#menu li:hover a{
+	color: #34cc93;
 }
 #menu li a,
 #menu li.active a{
@@ -102,7 +102,7 @@ p{
 	display:block;
 }
 #menu li.active a{
-	color: #fff;
+	color: #34cc93;
 }
 #menu{
 	position:fixed;
@@ -257,7 +257,38 @@ p{
 	background-size: contain!important;
 }
 
+#section3{
+	background-image: url(2.jpg)!important;
+	background-size: contain!important;
+}
+
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
 	background-color: #fff;
 	border: 3px solid aqua;
+}
+
+.main-menu{
+	width: 100%;
+	text-align: center;
+	
+}
+
+#menu{
+	display: inline-block;
+	background: rgba(29,49,73,.5);
+	height: 56px;
+	padding-top: 10px;
+}
+
+#menu li{
+	vertical-align: 20px;
+}
+
+#menu a img{
+	width: 50px;
+	height: 50px;
+}
+
+#menu .logo{
+	margin: 20px;
 }
