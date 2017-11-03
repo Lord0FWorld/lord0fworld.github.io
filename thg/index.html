@@ -67,6 +67,7 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+				menu: '#menu',
 				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
 				navigation: true,
 				navigationPosition: 'right',
@@ -89,7 +90,7 @@
 
 <nav class="main-menu">
 	<ul id="menu">
-		<li data-menuanchor="firstPage"><a href="#firstPage">HOME</a></li>
+		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
 		<li data-menuanchor="secondPage"><a href="#secondPage">OUR PEOPLE</a></li>
 		<a class="logo" href="#"><img src="logo.png" alt="logo"></a>
 		<li data-menuanchor="thirdPage"><a href="#thirdPage">SERVICES</a></li>
