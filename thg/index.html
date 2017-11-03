@@ -69,7 +69,7 @@
 			$('#fullpage').fullpage({
 				anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
 				menu: '#menu',
-				sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
+				sectionsColor: ['#fff', '#fff', '#fff' , '#fff'],
 				navigation: true,
 				navigationPosition: 'right',
 				navigationTooltips: ['Первая', 'Вторая', 'Третья', 'Четвертая']
@@ -89,59 +89,109 @@
     });
   </script> -->
 
-<nav class="main-menu">
-	<ul id="menu">
-		<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
-		<li data-menuanchor="secondPage"><a href="#secondPage">OUR PEOPLE</a></li>
-		<a class="logo" href="#"><img src="logo.png" alt="logo"></a>
-		<li data-menuanchor="thirdPage"><a href="#thirdPage">SERVICES</a></li>
-		<li data-menuanchor="fourthPage"><a href="#fourthPage">CASE STUDIOS</a></li>
-	</ul>
-</nav>
 
-<div id="fullpage">
-	<div class="section" data-anchor="firstPage" id="section0">
-		<div class="top-section">
-			<h1>Welcome<br> to the helper group</h1>
-			<p>Your telephone service and partner providing fortune 1000 companies<br> with results-driven contact center services</p>
-			<a href="#" class="get_start">GET STARTED</a>
-			<a href="#" class="ask">ASK A QUESTION</a>
-		</div>
-		<div class="bot-section">
-			<div class="social">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-				<a href="#"><i class="fa fa-linkedin"></i></a>
-				<a href="#"><i class="fa fa-youtube"></i></a>
-				<a href="#"><i class="fa fa-google"></i></a>
+	<nav class="main-menu">
+		<ul id="menu">
+			<li data-menuanchor="firstPage" class="active"><a href="#firstPage">HOME</a></li>
+			<li data-menuanchor="secondPage"><a href="#secondPage">OUR PEOPLE</a></li>
+			<a class="logo" href="#"><img src="logo.png" alt="logo"></a>
+			<li data-menuanchor="thirdPage"><a href="#thirdPage">SERVICES</a></li>
+			<li data-menuanchor="fourthPage"><a href="#fourthPage">CASE STUDIOS</a></li>
+		</ul>
+	</nav>
+	
+	<div id="fullpage">
+		<div class="section" data-anchor="firstPage" id="section0">
+			<div class="top-section">
+				<h1>Welcome<br> to the helper group</h1>
+				<p>Your telephone service and partner providing fortune 1000 companies<br> with results-driven contact center services</p>
+				<a href="#" class="get_start">GET STARTED</a>
+				<a href="#" class="ask">ASK A QUESTION</a>
 			</div>
-			<div class="scroll">
-				<div class="animate">
-					<a href="#secondPage"><img src="mouse.png" alt=""></a>
+			<div class="bot-section">
+				<div class="social">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-youtube"></i></a>
+					<a href="#"><i class="fa fa-google"></i></a>
+				</div>
+				<div class="scroll">
+					<div class="animate">
+						<a href="#secondPage"><img src="mouse.png" alt=""></a>
+					</div>
+				</div>
+				<div class="phone">
+					<a href="tel:18776935168"><span>call 1-877-693-5168</span></a>
 				</div>
 			</div>
-			<div class="phone">
-				<a href="tel:18776935168"><span>call 1-877-693-5168</span></a>
-			</div>
 		</div>
-	</div>
-	<div class="section" data-anchor="secondPage" id="section1">
-	    <div class="slide" id="slide1">
+		<div class="section" data-anchor="secondPage" id="section1">
+		    <div class="left-side">
+		    	<h2>About us</h2>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio dignissimos nisi assumenda voluptas similique, esse, vel, fugiat rerum, natus neque perspiciatis accusamus error! Eaque, nobis, et! Reprehenderit cumque, distinctio molestias voluptatum voluptatem quisquam nulla suscipit odio, minus quae similique.</p>
+		    	<a href="#" class="get_start">READ MORE</a>
+		    </div>
+		    <div class="right-side">
+		    	<h2>OUR SERVICES</h2>
+		    	<ul>
+		    		<li>
+		    			<h3>Survey and polling</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, debitis.</p>
+		    		</li>
+		    		<li>
+		    			<h3>Lead generation</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, expedita!</p>
+		    		</li>
+		    		<li>
+		    			<h3>Technical support</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, delectus.</p>
+		    		</li>
+		    		<li>
+		    			<h3>Market research</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, maiores?</p>
+		    		</li>
+		    	</ul>
+		    	<a href="#" class="get_start">MORE SERVICES</a>
+		    </div>
+	
+		</div>
+
+		<div class="section" data-anchor="thirdPage" id="section2">
 			
 		</div>
-
-	    <div class="slide" id="slide2">
-			<h1>Slide 2</h1>
+		
+		<div class="section" data-anchor="fourthPage" id="section3">
+			<div class="left-side">
+		    	<h2>About us</h2>
+		    	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi optio dignissimos nisi assumenda voluptas similique, esse, vel, fugiat rerum, natus neque perspiciatis accusamus error! Eaque, nobis, et! Reprehenderit cumque, distinctio molestias voluptatum voluptatem quisquam nulla suscipit odio, minus quae similique.</p>
+		    	<a href="#" class="get_start">READ MORE</a>
+		    </div>
+		    <div class="right-side">
+		    	<h2>OUR SERVICES</h2>
+		    	<ul>
+		    		<li>
+		    			<h3>Survey and polling</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, debitis.</p>
+		    		</li>
+		    		<li>
+		    			<h3>Lead generation</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, expedita!</p>
+		    		</li>
+		    		<li>
+		    			<h3>Technical support</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, delectus.</p>
+		    		</li>
+		    		<li>
+		    			<h3>Market research</h3>
+		    			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, maiores?</p>
+		    		</li>
+		    	</ul>
+		    	<a href="#" class="get_start">MORE SERVICES</a>
+		    </div>
 		</div>
+	</div>
 
-	</div>
-	<div class="section" data-anchor="thirdPage" id="section2">
-		
-	</div>
-	<div class="section" data-anchor="fourthPage" id="section3">
-		
-	</div>
-</div>
 
 
 </body>

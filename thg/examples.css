@@ -405,27 +405,20 @@ p{
 
 #section0{
 	background-image: url(1_1.jpg)!important;
-	background-size: cover!important;
 	
 }
 
-#section1{
-	background-image: url(2.jpg)!important;
-	background-size: cover!important;
-	
+#section1,#section3{
+	padding: 80px;
 }
 
 #section2{
 	background-image: url(3.jpg)!important;
-	background-size: cover!important;
-	
+	-webkit-background-size: contain!important;
+	background-size: contain!important;
 }
 
-#section3{
-	background-image: url(2.jpg)!important;
-	background-size: cover!important;
-	
-}
+
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
 	background-color: #fff;
@@ -463,7 +456,7 @@ p{
 	margin-bottom: 90px;
 }
 
-.top-section a{
+.top-section a {
 	color: #fff;
 	border: 1px solid #fff;
 	padding: 20px 50px;
@@ -473,10 +466,28 @@ p{
 	margin-left: 30px;
 }
 
-.top-section a:hover{
-	background-color: #34cc93 ;
-	border: 1px solid transparent;
+.left-side,.right-side{
+	text-align: left;
 }
+
+.left-side .get_start, .right-side .get_start{
+	background-color: #34cc93 ;
+	display: inline-block;
+	color: #fff;
+	padding: 10px 40px;
+	border-radius: 40px;
+	transition: all .3s ease;
+}
+
+.top-section a:hover {
+	border: 1px solid transparent;
+	background-color: #34cc93;
+}
+
+.left-side .get_start:hover, .right-side .get_start:hover{
+	background-color: rgba(29,49,73,1);
+}
+
 a{
 	color:#fff;
 }
@@ -521,17 +532,85 @@ a{
 .bot-section .scroll{
 	display: inline-block;
 	width: 30%;
-	
+	position: relative;
 }
 
-.bot-section .scroll .animate{
+.bot-section .scroll .animate img{
 	animation: animationFrames 2s infinite;
-	position: relative;
 }
 
 .bot-section .scroll .animate a{
 	position: absolute;
-    left: 80px;
+    left: 0;
     bottom: 10px;
 }
 
+.left-side, .right-side{
+	display: inline-block;
+	width: 45%;
+	color: rgba(29,49,73,1);
+	vertical-align: text-top;	
+}
+
+.right-side{
+	padding-left: 70px;
+}
+
+#section1 p,#section3 p{
+	color: #000;
+	text-align: left;
+	font-size: 14px;
+	margin-bottom: 40px;
+	line-height: 2;
+}
+
+#section1 h2,#section3 h2{
+	margin-bottom: 50px;
+	text-align: left;
+	font-weight: bold;
+	font-size: 30px;
+	color: rgba(29,49,73,1);
+}
+
+.right-side ul li{
+	display: inline-block;
+	width: 35%;
+	padding-left: 50px;
+
+}
+
+.right-side ul li h3{
+	font-size: 12px;
+	color: #34cc93;
+	margin-bottom: 10px;
+	white-space: nowrap;
+}
+
+#section1 .right-side ul li p,#section3 .right-side ul li p{
+	font-size: 10px;
+	line-height: inherit;
+}
+
+#section1 .right-side ul li:nth-child(1),#section3 .right-side ul li:nth-child(1){
+	background-image: url(ico1.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#section1 .right-side ul li:nth-child(2),#section3 .right-side ul li:nth-child(2){
+	background-image: url(ico2.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#section1 .right-side ul li:nth-child(3),#section3 .right-side ul li:nth-child(3){
+	background-image: url(ico3.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+
+#section1 .right-side ul li:nth-child(4),#section3 .right-side ul li:nth-child(4){
+	background-image: url(ico4.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
